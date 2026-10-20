@@ -39,3 +39,24 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+credentials.json
+
+jumpone-mails.json
+
+jumpone-sync-state.json
+
+# Google OAuth credentials and tokens
+credentials*.json
+token.json
+tokens.json
+.env
+.env.*
+!.env.example
+
+# Private Gmail data
+jumpone-mails*.json
+jumpone-sync-state*.json
+
+# Generated personal lesson history
+src/data/lessonData.ts

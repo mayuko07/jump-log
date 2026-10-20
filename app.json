@@ -2,12 +2,17 @@
   "expo": {
     "name": "jumpone",
     "slug": "jumpone",
+    "scheme": "jumplog",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yayoifnk.jumplog",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -20,6 +25,20 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d69b2634-a5ed-4fc6-8bd1-9e376c447dc6"
+      }
+    },
+    "plugins": [
+      "expo-web-browser",
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.74049305506-oav724fjt1ksj3t4qqkkopp8depje6ht"
+        }
+      ]
+    ]
   }
 }
